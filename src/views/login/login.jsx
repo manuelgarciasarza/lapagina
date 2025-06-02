@@ -42,7 +42,7 @@ function Login() {
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            placeholder="manu"
+            placeholder=""
           />
 
           <label>Password</label>
@@ -50,7 +50,7 @@ function Login() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="1234"
+            placeholder=""
           />
 
           <button type="submit">Log in</button>

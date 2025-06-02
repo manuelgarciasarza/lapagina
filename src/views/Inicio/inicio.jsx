@@ -4,7 +4,7 @@ import postsData from "../../utils/users";
 import avatar from "../../img/avatar.jpg";
 import { crearPublicacion } from "../../utils/crearPublicacion";
 import { usePublicaciones } from "../../hooks/usePublicaciones";
-import Comentarios from "../../components/comentarios/comentarios";
+import Comentarios from "../../components/coment/coment";
 import { useComentarios } from "../../hooks/useComentarios";
 
 function PostWithCommentsCount({
