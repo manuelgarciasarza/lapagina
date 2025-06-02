@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useComentarios } from "../../hooks/useComentarios";
 import { crearComentario } from "../../utils/crearComentario";
-import styles from "./comentarios.module.css";
+import styles from "./cocomentarios.module.css";
 
 const Comentarios = ({ postId, usuario }) => {
   const comentarios = useComentarios(postId);
