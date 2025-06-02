@@ -358,10 +358,10 @@ const usuarios = [
   },
   {
     id: 52,
-    user: "lionel",
+    user: "franco",
     pass: "1234",
     country: "Argentina",
-    nombre: "Lionel Messi",
+    nombre: "Franco Colapinto",
   },
   {
     id: 53,
@@ -467,6 +467,20 @@ const usuarios = [
     pass: "1234",
     country: "Chile",
     nombre: "Ana Tijoux",
+  },
+  {
+    id: 68,
+    user: "max",
+    pass: "1234",
+    country: "Paises Bajos",
+    nombre: "Max Verstappen",
+  },
+  {
+    id: 69,
+    user: "pepe",
+    pass: "1234",
+    country: "Argentina",
+    nombre: "Guillermo Francella",
   },
 ];
 
