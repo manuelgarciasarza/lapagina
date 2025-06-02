@@ -141,16 +141,6 @@ function Inicio() {
             setComentarioAbierto={setComentarioAbierto}
           />
         ))}
-
-        {/* Publicaciones locales */}
-        {postsLocales.map((post) => (
-          <div key={post.id} className={style.postCard}>
-            <h3 className={style.postUser}>{post.user}</h3>
-            <p className={style.postTime}>{post.time}</p>
-            <p className={style.postContent}>{post.content}</p>
-            <p className={style.postComments}>{post.comments} comments</p>
-          </div>
-        ))}
       </div>
     </div>
   );
