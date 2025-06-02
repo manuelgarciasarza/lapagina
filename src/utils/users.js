@@ -1,14 +1,5 @@
 const posts = [
   {
-    id: 1,
-    user: "Tom Hanks",
-    country: "USA",
-    time: "3 hours ago",
-    content:
-      "Just wrapped up filming! Grateful for an amazing crew and beautiful locations. What a journey.",
-    comments: 5,
-  },
-  {
     id: 2,
     user: "Emma Watson",
     country: "UK",

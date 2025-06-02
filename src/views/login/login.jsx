@@ -1,20 +1,34 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./login.module.css";
+import usuarios from "../../utils/usuarios";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username === "dafneebertz" && password === "1234") {
+    const usuarioEncontrado = usuarios.find(
+      (u) => u.user === username && u.pass === password
+    );
+
+    if (usuarioEncontrado) {
+      // Guardar en localStorage
+      localStorage.setItem("usuario", usuarioEncontrado.nombre);
+      localStorage.setItem("pais", usuarioEncontrado.country);
+
+      // Confirmar por consola
+      console.log("✅ Usuario autenticado:");
+      console.log("Nombre:", usuarioEncontrado.nombre);
+      console.log("País:", usuarioEncontrado.country);
+
+      // Ir a /inicio
       navigate("/inicio");
     } else {
-      alert("Usuario o contraseña incorrectos");
+      alert("❌ Usuario o contraseña incorrectos");
     }
   };
 
@@ -28,6 +42,7 @@ function Login() {
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            placeholder="manu"
           />
 
           <label>Password</label>
@@ -35,6 +50,7 @@ function Login() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="1234"
           />
 
           <button type="submit">Log in</button>
