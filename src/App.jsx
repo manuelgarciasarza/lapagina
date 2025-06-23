@@ -17,10 +17,10 @@ function MainApp() {
         <Routes>
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/" element={<Login />}></Route>
-          <Route path="/user/damian" element={<Damian />}></Route>
-          <Route path="/user/constanza" element={<Constanza />}></Route>
-          <Route path="/user/abril" element={<Abril />}></Route>
-          <Route path="/user/valentin" element={<Valentin />}></Route>
+          <Route path="/damian" element={<Damian />}></Route>
+          <Route path="/constanza" element={<Constanza />}></Route>
+          <Route path="/abril" element={<Abril />}></Route>
+          <Route path="/valentin" element={<Valentin />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
