@@ -482,6 +482,34 @@ const usuarios = [
     country: "Argentina",
     nombre: "Guillermo Francella",
   },
+  {
+    id: 70,
+    user: "valentin",
+    pass: "1234",
+    country: "Argentina",
+    nombre: "Valentin",
+  },
+  {
+    id: 71,
+    user: "abril",
+    pass: "1234",
+    country: "Argentina",
+    nombre: "Abril",
+  },
+  {
+    id: 72,
+    user: "constanza",
+    pass: "1234",
+    country: "Argentina",
+    nombre: "Constanza",
+  },
+  {
+    id: 73,
+    user: "damian",
+    pass: "1234",
+    country: "Argentina",
+    nombre: "Damian",
+  },
 ];
 
 export default usuarios;
